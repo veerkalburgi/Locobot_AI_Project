@@ -1,5 +1,5 @@
 <launch>  
-  <arg name="base"/>
+  <arg name="base" value="$(optenv TURTLEBOT_BASE kobuki)"/>
 
   <!-- Static transform to make camera work in sim -->
   <node pkg="tf" type="static_transform_publisher" name="cam_transform" args="0 0 0 0 0 0 /camera_link /camera_color_optical_frame 100" />
@@ -41,6 +41,7 @@
     <node pkg="nodelet" type="nodelet" name="mobile_base_nodelet_manager" args="manager"/>
     <node pkg="nodelet" type="nodelet" name="cmd_vel_mux"
           args="load yocs_cmd_vel_mux/CmdVelMuxNodelet mobile_base_nodelet_manager">
+          
       <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml"/>
       <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>
     </node>
