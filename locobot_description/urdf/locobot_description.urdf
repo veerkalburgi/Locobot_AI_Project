@@ -927,7 +927,8 @@
 
 
       <gazebo>  
-         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">   
+         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
+         <robotNamespace>/</robotNamespace>   
              <alwaysOn>true</alwaysOn>  
              <legacyMode>false</legacyMode> 
             <updateRate>40</updateRate> 

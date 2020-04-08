@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # *******************************************************************************
 # Copyright (c) Facebook, Inc. and its affiliates.
 # This source code is licensed under the MIT license found in the
@@ -25,7 +26,7 @@ from sensor_msgs.msg import JointState
 from moveit_msgs.srv import GetPositionIKRequest, GetPositionIK, GetPositionFK
 #from trac_ik_python.trac_ik import IK
 from dynamixel_workbench_msgs.srv import JointCommand
-from analytic_ik import AnalyticInverseKinematics
+from locobot_control.analytic_ik import AnalyticInverseKinematics
 
 
 
