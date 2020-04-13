@@ -13,7 +13,7 @@
     <arg name="base" value="$(arg base)"/>
   </include>
 
-  <rosparam file="$(find locobot_gazebo)/config/robotic_arm_gazebo_joint_states.yaml" command="load"/>
+  <!--rosparam file="$(find locobot_gazebo)/config/robotic_arm_gazebo_joint_states.yaml" command="load"/-->
 
   <group if="$(eval base =='create')">
     <param name="robot_description" textfile="$(find locobot_description)/urdf/locobot_lite_description.urdf"/>

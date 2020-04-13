@@ -12,7 +12,7 @@
 
 <node name="locobot_gazebo" pkg="locobot_gazebo" type="locobot_gazebo" respawn="true" output="screen" />
 
-<include file="$(find locobot_moveit_config)/launch/demo.launch"/>
+<!--include file="$(find locobot_moveit_config)/launch/demo.launch"/-->
 
 
 </launch>
