@@ -1,12 +1,4 @@
 # Test Network Program
-# part of the toy  detector
-# uses LeNet to detect if toys are in the image
-#
-# Francis X. Govers 2018
-#
-# references:
-# https://www.pyimagesearch.com/2017/12/18/keras-deep-learning-raspberry-pi/
-#
 # import the necessary packages
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
